@@ -1,0 +1,67 @@
+{
+  "manifestVersion": 1,
+  "id": "chamindac-vsts-release-task-download-artifacts",
+  "version": "1.0.12",
+  "name": "Download Artifacts",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "Download Artifacts task, can be used in release definitions, to filter and download, for given build artifact(s), by build artifact name, when multiple artifacts available in build.",
+  "baseUri": "https://localhost",
+  "publisher": "chamindac",
+  "public": false,
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "build",
+    "artifacts"
+  ],
+  "links": {
+    "home": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts"
+    },
+    "getstarted": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts/wiki"
+    },
+    "learn": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts/wiki"
+    },
+    "support": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts/wiki"
+    },
+    "repository": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts"
+    },
+    "issues": {
+      "uri": "https://github.com/chamindac/vsts.release.task.download-artifacts/issues"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "download-artifacts"
+    }
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "contributions": [
+    {
+      "id": "download-artifacts",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "download-artifacts"
+      }
+    }
+  ]
+}
