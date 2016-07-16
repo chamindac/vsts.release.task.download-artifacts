@@ -12,7 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-Write-Verbose -Verbose "Version 1.0.14"
+Write-Verbose -Verbose "Version 1.0.17"
 
 Add-Type -assembly 'system.io.compression.filesystem'
 #--------------------------CreateCleanDirectory----------------------
