@@ -41,6 +41,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Docs\readme.md" />
     <None Include="gruntfile.js" />
     <None Include="package.json" />
     <None Include="vss-extension.json" />
@@ -49,12 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".vscode\tasks.json" />
+    <Content Include="Docs\license.txt" />
     <Content Include="download-artifacts\icon.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\screenshots\DownloadArtifacts-01.png" />
+    <Content Include="img\screenshots\DownloadArtifacts-02.png" />
+    <Content Include="img\screenshots\DownloadArtifacts-AddTask.png" />
     <Content Include="test\TestSpec.js" />
     <Content Include="download-artifacts\DownloadArtifacts.ps1" />
     <Content Include="download-artifacts\task.json" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
