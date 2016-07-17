@@ -1,13 +1,13 @@
 {
   "manifestVersion": 1,
   "id": "chamindac-vsts-release-task-download-artifacts",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "name": "Download Artifacts",
   "scopes": [ "vso.work", "vso.work_write" ],
   "description": "Download Artifacts task, can be used in release definitions, to filter and download, for given build artifact(s), by build artifact name, when multiple artifacts available in build.",
   "baseUri": "https://localhost",
   "publisher": "chamindac",
-  "public": false,
+  "public": true,
   "icons": {
     "default": "img/logo.png"
   },
