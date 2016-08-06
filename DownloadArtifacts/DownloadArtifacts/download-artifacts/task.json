@@ -11,8 +11,8 @@
   "author": "Chaminda Chandrasekara",
   "version": {
     "Major": 1,
-    "Minor": 0,
-    "Patch": 18
+    "Minor": 1,
+    "Patch": 11
   },
   "demands": [
   ],
@@ -22,27 +22,12 @@
   ],
   "inputs": [
     {
-      "name": "buildDefinitionName",
-      "type": "string",
-      "label": "Build Definition Name",
-      "defaultValue": "$(Build.DefinitionName)",
-      "required": true
-    },
-    {
       "name": "artifactNames",
       "type": "string",
       "label": "Build Artifact Names",
       "defaultValue": "*",
       "required": false,
-      "helpMarkDown": "Artifact Names to Download separated by ;. Example 'Drop1;Drop2' (without quotes). * for all artifacts"
-    },
-    {
-      "name": "artifactDestinationFolder",
-      "type": "string",
-      "label": "Artifacts Destination",
-      "defaultValue": "$(System.DefaultWorkingDirectory)\\$(Build.DefinitionName)",
-      "required": true,
-      "helpMarkDown": "Absolute path of the destination folder on the local machine, or a UNC Share like c:\\fabrikamfiber or \\\\\\\\fabrikamshare\\fabrikamfiber."
+      "helpMarkDown": "Artifact Names/Paths to Download separated by ;. Example asterisk (default) as artifat names allow all artifacts download. Multiple artifacts can be specified with pattern Drop1;Drop2. Artifact name with subpath allows to download sub item of a given artifact. Multiple can be specified with pattern Drop1\\MyWebProj;Drop1\\ReleaseNote.html;Drop2;Drop3\\MyWebProj2 . Wild cards in paths are NOT SUPPORTED. Asterisk value as default supported to specify all artifacts."
     }
   ],
   "instanceNameFormat": "Download Artifacts",

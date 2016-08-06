@@ -4,8 +4,15 @@ Release task that enable you to download build artifacts with filtering by artif
 
 # Documentation
 
+[Update 1.01.11](http://chamindac.blogspot.com/2016/08/download-artifactsvststfs-extension.html)
+
 Please check the [Get started](http://chamindac.blogspot.com/2016/07/vsts-release-task-download-artifacts.html) and [requirement of this extension](http://chamindac.blogspot.com/2016/07/multiple-build-artifactstfs-2015vsts.html)
 
-![Download Artifacts](https://chamindac.gallery.vsassets.io/_apis/public/gallery/publisher/chamindac/extension/chamindac-vsts-release-task-download-artifacts/1.0.16/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6ImNoYW1pbmRhYyIsImVuIjoiY2hhbWluZGFjLXZzdHMtcmVsZWFzZS10YXNrLWRvd25sb2FkLWFydGlmYWN0cyIsImV4cCI6IjE0NjkzMTM4NzUifQ==.N0U4Q0k1RUxLRVBNcXJUYzB2WENtMUp4cXc2VUlCZWZBOExqM0FHcVNiaz0=/Microsoft.VisualStudio.Services.Screenshots.2)
+**Note**
+TFS 2015.2.1 onwards and VSTS supported.
+XAML build output not supported. Only supports new web based build system.
+Updating from version 1.0.18 to 1.1.11 requires to edit the release defintion and save to, fix parameter not found issues for removed input parameters.
 
-![Download Artifacts](https://chamindac.gallery.vsassets.io/_apis/public/gallery/publisher/chamindac/extension/chamindac-vsts-release-task-download-artifacts/1.0.16/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6ImNoYW1pbmRhYyIsImVuIjoiY2hhbWluZGFjLXZzdHMtcmVsZWFzZS10YXNrLWRvd25sb2FkLWFydGlmYWN0cyIsImV4cCI6IjE0NjkzMTM4NzUifQ==.N0U4Q0k1RUxLRVBNcXJUYzB2WENtMUp4cXc2VUlCZWZBOExqM0FHcVNiaz0=/Microsoft.VisualStudio.Services.Screenshots.3)
+![Download Artifacts](https://chamindac.gallery.vsassets.io/_apis/public/gallery/publisher/chamindac/extension/chamindac-vsts-release-task-download-artifacts/1.1.11/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6ImNoYW1pbmRhYyIsImVuIjoiY2hhbWluZGFjLXZzdHMtcmVsZWFzZS10YXNrLWRvd25sb2FkLWFydGlmYWN0cyIsImV4cCI6IjE0NjkzMTM4NzUifQ==.N0U4Q0k1RUxLRVBNcXJUYzB2WENtMUp4cXc2VUlCZWZBOExqM0FHcVNiaz0=/Microsoft.VisualStudio.Services.Screenshots.2)
+
+![Download Artifacts](https://chamindac.gallery.vsassets.io/_apis/public/gallery/publisher/chamindac/extension/chamindac-vsts-release-task-download-artifacts/1.1.11/privateasset/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwbiI6ImNoYW1pbmRhYyIsImVuIjoiY2hhbWluZGFjLXZzdHMtcmVsZWFzZS10YXNrLWRvd25sb2FkLWFydGlmYWN0cyIsImV4cCI6IjE0NjkzMTM4NzUifQ==.N0U4Q0k1RUxLRVBNcXJUYzB2WENtMUp4cXc2VUlCZWZBOExqM0FHcVNiaz0=/Microsoft.VisualStudio.Services.Screenshots.3)
