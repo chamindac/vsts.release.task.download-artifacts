@@ -3,19 +3,22 @@
 #
 [CmdletBinding(DefaultParameterSetName = 'None')]
 param(
-	<#[Parameter(Mandatory=$True)]
-    [string]$buildDefinitionName,#>
+	<#[Parameter()]
+    [string]$buildDefinitionName = $Env:BUILD_DEFINITIONNAME,#>
     [Parameter()]
-    [string]$artifactNames = "*"<#,
+    [string]$artifactNames = "*",
     [Parameter()]
-    [string]$artifactDestinationFolder = $Env:SYSTEM_DEFAULTWORKINGDIRECTORY#>
+    [string]$artifactDestinationFolder  
 )
 
 $ErrorActionPreference = "Stop"
-Write-Verbose -Verbose "Version 1.1.11"
+Write-Verbose -Verbose "Version 1.1.14"
 
 $buildDefinitionName = $Env:BUILD_DEFINITIONNAME
-$artifactDestinationFolder = Join-Path $Env:SYSTEM_DEFAULTWORKINGDIRECTORY $buildDefinitionName
+if ([string]::IsNullOrEmpty($artifactDestinationFolder))
+{
+	$artifactDestinationFolder = Join-Path $Env:SYSTEM_DEFAULTWORKINGDIRECTORY $buildDefinitionName
+}
 
 Add-Type -assembly 'system.io.compression.filesystem'
 #--------------------------CreateCleanDirectory----------------------

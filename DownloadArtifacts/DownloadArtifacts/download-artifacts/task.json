@@ -12,7 +12,7 @@
   "version": {
     "Major": 1,
     "Minor": 1,
-    "Patch": 11
+    "Patch": 14
   },
   "demands": [
   ],
@@ -28,6 +28,14 @@
       "defaultValue": "*",
       "required": false,
       "helpMarkDown": "Artifact Names/Paths to Download separated by ;. Example asterisk (default) as artifat names allow all artifacts download. Multiple artifacts can be specified with pattern Drop1;Drop2. Artifact name with subpath allows to download sub item of a given artifact. Multiple can be specified with pattern Drop1\\MyWebProj;Drop1\\ReleaseNote.html;Drop2;Drop3\\MyWebProj2 . Wild cards in paths are NOT SUPPORTED. Asterisk value as default supported to specify all artifacts."
+    },
+    {
+      "name": "artifactDestinationFolder",
+      "type": "string",
+      "label": "Artifacts Destination",
+      "defaultValue": "$(System.DefaultWorkingDirectory)\\$(Build.DefinitionName)",
+      "required": false,
+      "helpMarkDown": "Absolute path of the destination folder on the local machine, or a UNC Share like c:\\fabrikamfiber or \\\\\\\\fabrikamshare\\fabrikamfiber. If not supplied default value $(System.DefaultWorkingDirectory)\\$(Build.DefinitionName) will be applied automatically"
     }
   ],
   "instanceNameFormat": "Download Artifacts",
