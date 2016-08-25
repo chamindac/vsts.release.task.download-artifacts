@@ -12,7 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-Write-Verbose -Verbose "Version 1.1.14"
+Write-Verbose -Verbose "Version 1.1.15"
 
 $buildDefinitionName = $Env:BUILD_DEFINITIONNAME
 if ([string]::IsNullOrEmpty($artifactDestinationFolder))
