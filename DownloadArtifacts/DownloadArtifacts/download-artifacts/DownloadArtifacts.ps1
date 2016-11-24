@@ -155,3 +155,4 @@ foreach($buildArtifact in $buildArtifacts.value)
         }
     }
 }
+Write-Host "##vso[task.complete result=Succeeded;]DONE"
