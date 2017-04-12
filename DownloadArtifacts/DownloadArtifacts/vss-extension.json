@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "chamindac-vsts-release-task-download-artifacts",
-  "version": "1.1.15",
+  "version": "2.0.2",
   "name": "Download Artifacts",
   "scopes": [ "vso.work", "vso.work_write" ],
   "description": "Download build artifacts with filtering by artifact name, when you have more than one artifact, or download sub folders or files, without downloading the entire artifact folder.",
@@ -67,6 +67,9 @@
   "files": [
     {
       "path": "download-artifacts"
+    },
+    {
+      "path": "download-artifacts-new"
     }
   ],
   "categories": [
@@ -81,6 +84,16 @@
       "type": "ms.vss-distributed-task.task",
       "properties": {
         "name": "download-artifacts"
+      }
+    },
+    {
+      "id": "download-artifacts-new",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "download-artifacts-new"
       }
     }
   ]

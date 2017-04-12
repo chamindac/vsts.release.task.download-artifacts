@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Docs\readme.md" />
+    <Content Include="download-artifacts-new\DownloadArtifacts.ps1" />
+    <Content Include="download-artifacts-new\task.json" />
     <None Include="gruntfile.js" />
     <None Include="package.json" />
     <None Include="vss-extension.json" />
@@ -51,6 +53,7 @@
   <ItemGroup>
     <None Include=".vscode\tasks.json" />
     <Content Include="Docs\license.txt" />
+    <Content Include="download-artifacts-new\icon.png" />
     <Content Include="download-artifacts\icon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\screenshots\DownloadArtifacts-01.png" />

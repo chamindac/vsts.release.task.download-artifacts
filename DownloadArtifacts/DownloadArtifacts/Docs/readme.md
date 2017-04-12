@@ -2,9 +2,15 @@
 
 Release task that enable you to download build artifacts with filtering by artifact name, when you have more than one artifact, or download sub folders or files, without downloading the entire artifact folder.
 
-Multiple artifact names/paths to download can be specified separated by ;. Example asterisk (default) as artifat names allow all artifacts download. Multiple artifacts can be specified with pattern Drop1;Drop2. Artifact name with subpath allows to download sub item of a given artifact. Multiple can be specified with pattern Drop1\\MyWebProj;Drop1\\ReleaseNote.html;Drop2;Drop3\\MyWebProj2 . Wild cards in paths are NOT SUPPORTED. Asterisk value as default supported to specify all artifacts.
+Multiple artifact names/paths to download can be specified separated by ;. Example asterisk (default) as artifat names allow all artifacts download. Multiple artifacts can be specified with pattern ArtifactSourceAlias1\\Drop1;ArtifactSourceAlias2\\Drop2. Artifact name with subpath allows to download sub item of a given artifact. Multiple can be specified with pattern ArtifactSourceAlias1\\Drop1\\MyWebProj;ArtifactSourceAlias1\\Drop1\\ReleaseNote.html;ArtifactSourceAlias2\\Drop2;ArtifactSourceAlias3\\Drop3\\MyWebProj2 . Wild cards in paths are NOT SUPPORTED. Asterisk value as default supported to specify all artifacts.
 
 # Documentation
+
+[Update 2.0.2]
+
+**Download Artifacts (New)** Supports downloading in multiple artifacts linked release definitions. This new task is only supported in TFS 2017 & VSTS. Works with Artifacts from different team projects as well.
+For TFS 2015.2.1 use the Download Artifacts (Deprecated) task.
+
 
 [Update 1.1.15](http://chamindac.blogspot.com/2016/08/download-artifactsvststfs-extension.html)
 
